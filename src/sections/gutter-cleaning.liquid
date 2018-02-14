@@ -1,0 +1,44 @@
+{% comment %} Window Cleaning Section {% endcomment %}
+
+<section class="section u-align-center">
+  <div class="grid">
+    <div class="grid__item one-whole">
+      <h2 class="section__title section__title--thick section__title--dark u-align-center"> {{ section.settings.gutter-cleaning-title }} </h2>
+      <p class="paragraph"> {{ section.settings.gutter-cleaning-title }} </p>
+      <a href="{{ section.settings.link }}" class="btn btn--primary u-push-ends">{{ section.settings.linktext }} </a>
+        {{ 'gutter-cleaning.png' | asset_url | img_tag: 'u-image-fit u-display-block' }}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "gutter-cleaning",
+    "settings": [
+      {
+        "id": "gutter-cleaning-title",
+        "type": "text",
+        "label": "Title",
+        "default": "Are you looking for gutter cleaning?"
+      },
+      {
+        "id": "gutter-cleaning-subtitle",
+        "type": "text",
+        "label": "Subtitle",
+        "default": "Residential gutter cleaning in Toronto, Ontario"
+      },
+      {
+      "id": "link",
+      "type": "url",
+      "label": "Button link"
+      },
+      {
+        "id": "linktext",
+        "type": "text",
+        "label": "Button text",
+        "default": "Clean my gutters"
+      }
+    ]
+  }
+{% endschema %}

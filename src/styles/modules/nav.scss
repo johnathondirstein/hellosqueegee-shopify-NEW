@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.5rem;
+  box-shadow: 0 .2rem 2rem rgba($color-black, .2);
+  flex-wrap: wrap;
+  @include media-query($medium-up) {
+    justify-content: space-between;
+  }
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+
+  li {
+    padding: 10px;
+    display: block;
+  }
+
+  a {
+    color: $color-body-text;
+    font-size: 1.5rem;
+    
+  }
+}
+
+.nav__top-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 5px;
+  background-color: $color-primary;
+}
+
+.nav--active {
+  font-weight: 900;
+}
+

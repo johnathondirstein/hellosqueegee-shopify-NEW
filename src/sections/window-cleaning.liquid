@@ -1,0 +1,44 @@
+{% comment %} Window Cleaning Section {% endcomment %}
+
+<section class="section section--small u-align-center">
+  <div class="grid">
+    <div class="grid__item one-whole">
+      <h2 class="section__title section__title--thick section__title--dark u-align-center"> {{ section.settings.window-cleaning-title }} </h2>
+      <p class="paragraph"> {{ section.settings.window-cleaning-title }} </p>
+      <a href="{{ section.settings.link }}" class="btn btn--primary u-push-ends">{{ section.settings.linktext }} </a>
+        {{ 'window-cleaning.png' | asset_url | img_tag: 'u-image-fit u-display-block' }}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "window-cleaning",
+    "settings": [
+      {
+        "id": "window-cleaning-title",
+        "type": "text",
+        "label": "Title",
+        "default": "Are you looking for window cleaning?"
+      },
+      {
+        "id": "window-cleaning-subtitle",
+        "type": "text",
+        "label": "Subtitle",
+        "default": "Residential window cleaning in Toronto, Ontario"
+      },
+      {
+      "id": "link",
+      "type": "url",
+      "label": "Button link"
+      },
+      {
+        "id": "linktext",
+        "type": "text",
+        "label": "Button text",
+        "default": "Clean my windows"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,51 @@
+<div class="section--primary section--small u-align-center ">
+  <div class="grid u-soft">
+    <h2 class="grid__item one-whole section__title u-flush"> {{ section.settings.trust-title }} </h2>
+  </div>
+  <div class="grid paragraph paragraph--white u-push-top">
+    <div class="grid__item medium-up--one-third">
+      <p class="paragraph paragraph--white"><i class="fas fa-check icon--green u-push-right"></i>{{ section.settings.trust-description-one }} </p>
+    </div>
+
+    <div class="grid__item medium-up--one-third">
+      <p class="paragraph paragraph--white"><i class="fas fa-check icon--green u-push-right"></i> {{ section.settings.trust-description-two }} </p>
+    </div>
+
+    <div class="grid__item medium-up--one-third">
+      <p class="paragraph paragraph--white"><i class="fas fa-check icon--green u-push-right"></i> {{ section.settings.trust-description-three }} </p>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "trust-section",
+    "settings": [
+      {
+        "id": "trust-title",
+        "type": "text",
+        "label": "Heading",
+        "default": "See why we're your neighbours favourite local window cleaners"
+      },
+      {
+        "id": "trust-description-one",
+        "type": "text",
+        "label": "Add custom text below",
+        "default": "100% money back guarantee"
+      },
+      {
+        "id": "trust-description-two",
+        "type": "text",
+        "label": "Add custom text below",
+        "default": "We're available on weekends"
+      },
+      {
+        "id": "trust-description-three",
+        "type": "text",
+        "label": "Add custom text below",
+        "default": "Booking is fast and easy"
+      }
+    ]
+  }
+{% endschema %}

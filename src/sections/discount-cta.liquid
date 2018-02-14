@@ -1,0 +1,43 @@
+{% comment %} Discount Section {% endcomment %}
+
+<section class="section--small section--primary u-align-center">
+  <div class="grid">
+    <h2 class="grid__item one-whole section__title u-flush"> {{ section.settings.discount-title }} </h2>
+  </div>
+  <a href="{{ section.settings.link }}" class="btn btn--discount u-push-ends">{{ section.settings.linktext }} </a>
+  <div class="grid">
+    <p class="grid__item one-whole paragraph paragraph--white u-flush"> {{ section.settings.discount-description }} </p>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "discount-section",
+    "settings": [
+      {
+        "id": "discount-title",
+        "type": "text",
+        "label": "Title",
+        "default": "Book window and gutter cleaning together and save $30"
+      },
+      {
+        "id": "discount-description",
+        "type": "text",
+        "label": "Description",
+        "default": "Our window and gutter cleaning is risk free. We're insured for 5 million, so you and your property are safe."
+      },
+      {
+      "id": "link",
+      "type": "url",
+      "label": "Button link"
+      },
+      {
+        "id": "linktext",
+        "type": "text",
+        "label": "Button text",
+        "default": "Save a few bucks"
+      }
+    ]
+  }
+{% endschema %}

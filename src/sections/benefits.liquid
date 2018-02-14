@@ -1,0 +1,115 @@
+
+{% comment %} Benefits Section {% endcomment %}
+<section class="section--small u-wrapper">
+  <div class="grid">
+    <h2 class="grid__item one-whole section__title section__title--thick section__title--dark u-align-center u-push-bottom--large"> {{ section.settings.benefits-title }} </h2>
+  </div>
+  <div class="grid u-soft">
+    <div class="grid__item medium-up--one-half">
+      <h2 class="section__title section__title--thick section__title--dark section__title--b-bottom"> {{ section.settings.benefits-one-title }} </h2>
+      <p class="paragraph u-push-top--med"> {{ section.settings.benefits-one-description }} </p>
+    </div>
+    <div class="grid__item medium-up--one-half u-align-center">
+
+    {{ 'benefit-1.png' | asset_url | img_tag: 'benefit', 'u-image-fit u-push-ends--until-medium' }}
+
+    </div>
+  </div>
+
+  <div class="grid u-grid-rev-order--until-med u-push-top--xlarge u-soft">
+    <div class="grid__item medium-up--one-half u-align-center">
+
+      {{ 'benefit-2.png' | asset_url | img_tag: 'benefit', 'u-image-fit u-push-top--until-medium' }}
+
+    </div>
+    <div class="grid__item medium-up--one-half">
+      <h2 class="section__title section__title--thick section__title--dark section__title--b-bottom"> {{ section.settings.benefits-two-title }} </h2>
+      <p class="paragraph u-push-top--med"> {{ section.settings.benefits-two-description }} </p>
+    </div>
+  </div>
+
+  <div class="grid u-push-top--xlarge u-soft">
+    <div class="grid__item medium-up--one-half">
+      <h2 class="section__title section__title--thick section__title--dark section__title--b-bottom"> {{ section.settings.benefits-three-title }} </h2>
+      <p class="paragraph u-push-top--med"> {{ section.settings.benefits-three-description }} </p>
+    </div>
+    <div class="grid__item medium-up--one-half u-align-center">
+
+      {{ 'benefit-3.png' | asset_url | img_tag: 'benefit', 'u-image-fit u-push-top--until-medium' }}
+      
+    </div>
+  </div>
+</section>
+
+{% comment %} In the future, ill make the image dynamic - current I've chosen to hard code them in. {% endcomment %}
+
+{% schema %}
+  {
+    "name": "benefits-section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "benefit-one-image",
+        "label": "First benefit image"
+      },
+      {
+        "type": "image_picker",
+        "id": "benefit-two-image",
+        "label": "Second benefit image"
+      },
+      {
+        "type": "image_picker",
+        "id": "benefit-three-image",
+        "label": "Third benefit image"
+      },
+      {
+        "id": "benefits-title",
+        "type": "text",
+        "label": "Heading",
+        "default": "Why choose us?"
+      },
+      {
+        "id": "benefits-one-title",
+        "type": "text",
+        "label": "Add custom text below",
+        "default": "You save alot of money"
+      },
+      {
+        "id": "benefits-one-description",
+        "type": "text",
+        "label": "Add custom text below",
+        "default": "Clogged gutters can leave you with thousands of dollars in damage to your home. It's much more affordable to have us give them a quick cleaning."
+      },
+      {
+        "id": "benefits-two-title",
+        "type": "text",
+        "label": "Add custom text below",
+        "default": "You avoid high ladders"
+      },
+      {
+        "id": "benefits-two-description",
+        "type": "text",
+        "label": "Add custom text below",
+        "default": "We're used to cleaning your windows and gutters from high above the ground. You're better off relaxing and letting us do the hard work."
+      },
+      {
+        "id": "benefits-three-title",
+        "type": "text",
+        "label": "Add custom text below",
+        "default": "Happiness guaranteed"
+      },
+      {
+        "id": "benefits-three-description",
+        "type": "text",
+        "label": "Add custom text below",
+        "default": "You have nothing to lose by inviting us over. Our business depends on your happiness, so if you're unhappy with our service, we'll make it right."
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

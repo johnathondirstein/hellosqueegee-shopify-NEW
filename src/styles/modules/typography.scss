@@ -1,0 +1,68 @@
+.header__title {
+  font-size: 2.4rem;
+  color: $color-body-text;
+  @include media-query($medium-up) {
+    font-size: 3rem;
+  }
+}
+
+.header__subtitle {
+  font-size: 1.7rem;
+  color: $color-body-text;
+  @include media-query($medium-up) {
+    font-size: 2rem;
+  }
+}
+
+.footer__headings {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $color-white;
+}
+
+.nav__btn-text {
+  display: block;
+  font-size: 1.2rem;
+  animation: moveInLeft 2s ease-in-out;
+}
+
+.section__title {
+  font-size: 2.4rem;
+  @include media-query($medium-up) {
+    font-size: 3rem;
+    // color: $color-white;
+  } 
+}
+
+.section__title--dark {
+  color: $color-body-text;
+}
+ 
+.section__title--thick {
+  font-weight: 600;
+}
+
+.section__title--b-bottom:after {
+  display: block;
+  height: 4px;
+  background-color: $color-pink;
+  content: " ";
+  width: 15rem;
+  margin-top: 2rem;
+}
+ 
+ // Icon misc
+ 
+.icon--green {
+  color: $color-green;
+}
+ 
+.paragraph {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: $color-body-text;
+}
+
+.paragraph--white {
+  color: $color-white;
+}

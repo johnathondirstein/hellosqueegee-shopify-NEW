@@ -1,0 +1,12 @@
+.section--primary {
+  background-color: $color-purple;
+  color: $color-white;
+  clear: both;
+}
+
+.section--small {
+  padding: 4rem 0;
+  @include media-query($medium-up) {
+    padding: 8rem 0;
+  }
+}

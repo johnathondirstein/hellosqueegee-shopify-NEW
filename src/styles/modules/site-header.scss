@@ -1,0 +1,24 @@
+/*================ Site Header ================*/
+.site-logo {
+  margin: 0;
+  font-weight: 800;
+  text-decoration: none;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*================ Site Header ================*/
+// HEADER 
+
+.header {
+  min-height: 80vh;
+  color: $color-font;
+}
+
+.header__text-box {
+  width: 100%;
+  max-width: 900px;
+}
