@@ -11,10 +11,10 @@
 @import url('settings/variables.scss.liquid');
 
 /*================ COMMON ================*/
+@import url('global/grid.scss');
 @import url('global/normalize.scss');
 @import url('global/slate-reset.scss');
 @import url('global/helper-classes.scss');
-@import url('global/grid.scss');
 @import url('global/layout.scss');
 @import url('global/icons.scss');
 @import url('global/rte.scss');
@@ -33,4 +33,5 @@
 @import url('modules/typography.scss');
 @import url('modules/section.scss');
 @import url('modules/animations.scss');
+@import url('modules/product-card.scss');
 @import url('modules/gift-card-template.scss');

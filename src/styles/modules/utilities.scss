@@ -38,6 +38,10 @@
   margin: 3rem 0;
 }
 
+.u-push-sides {
+  margin: 0 3rem;
+}
+
 .u-push-ends--until-medium {
   margin: 6rem 0;
   @include media-query($medium-up) {
@@ -77,6 +81,7 @@
 .u-wrapper {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .u-is-active {
@@ -166,6 +171,9 @@
   }
 }
 
+.u-weight-600 {
+  font-weight: 600;
+}
 
 
 

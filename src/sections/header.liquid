@@ -92,10 +92,10 @@
       </ul>
     </nav>
 
-    <div class="header__text-box u-center-vertically u-align-center u-center-vertically--large">
-        {% if template.name == 'index' %}
+    <div class="header__text-box u-center-vertically u-align-center u-center-vertically--large u-wrapper">
+        {% comment %} {% if template.name == 'index' %}
+        {% endif %} {% endcomment %}
           <h1 class="header__title u-flush"> {{ section.settings.text-box-title }} </h1>
-        {% endif %}
         <p class="header__subtitle u-push-top--small"> {{ section.settings.text-box-content }} </p>
         <a href="tel:226-504-2151" class="btn btn--header u-push-top">
           <i class="fas fa-phone u-push-right"></i>226-504-2151
